@@ -56,9 +56,9 @@
 }
 
 /* 全局小豆泥动态光标 */
-* { cursor: url(/images/cursor/pointer.ani), auto; }
-a, button, [role=button], .nav-link, .links { cursor: url(/images/cursor/link.ani), pointer; }
-input, textarea, [contenteditable] { cursor: url(/images/cursor/text.ani), text; }
+* { cursor: url(/images/cursor/pointer.ani), auto !important; }
+a, button, [role=button], .nav-link, .links { cursor: url(/images/cursor/link.ani), pointer !important; }
+input, textarea, [contenteditable] { cursor: url(/images/cursor/text.ani), text !important; }
 
 /* 文章内容区毛玻璃 */
 .article-content-container,
