@@ -10,3 +10,6 @@ source/fonts/dog.ttf
 source/fonts/pixel.ttf
 source/fonts/strawberry-subset.*
 source/fonts/pixel-subset.*
+
+.vercel
+.env*

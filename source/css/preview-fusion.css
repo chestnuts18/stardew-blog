@@ -22,7 +22,7 @@
   /* 文字 */
   --default-text-color: #1a2220 !important;
   --second-text-color: #4a5c56 !important;
-  --third-text-color: #6b7d77 !important;
+  --third-text-color: #5d6f69 !important;
 
   /* 边框 */
   --border-color: rgba(0, 71, 60, 0.1) !important;
@@ -168,12 +168,12 @@ footer.footer [id*="busuanzi"] {
 /* 图片加轻微浮起 */
 .markdown-body img[src*="/images/"]:not([src*="/emotes/"]) {
   border-radius: 12px !important;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+  box-shadow: 0 2px 12px rgba(0,71,60,0.06) !important;
   margin: 0.8rem 0 !important;
   transition: box-shadow 0.2s !important;
 }
 .markdown-body img[src*="/images/"]:not([src*="/emotes/"]):hover {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+  box-shadow: 0 4px 20px rgba(0,71,60,0.1) !important;
 }
 
 /* 链接悬停 */
@@ -196,13 +196,6 @@ footer.footer [id*="busuanzi"] {
   background: rgba(0,71,60,0.08) !important;
   color: #00473c !important;
 }
-/* 代码块 */
-.markdown-body code {
-  background: rgba(139,94,60,0.08) !important;
-  color: #6B3A2A !important;
-  border-radius: 4px !important;
-  padding: 2px 6px !important;
-}
 /* note 提示框 */
 .markdown-body .note {
   border-radius: 10px !important;
@@ -213,8 +206,8 @@ footer.footer [id*="busuanzi"] {
   border-left: 4px solid #00473c !important;
 }
 .markdown-body .note.success {
-  background: rgba(0,71,60,0.04) !important;
-  border-left: 4px solid #00473c !important;
+  background: rgba(139,94,60,0.05) !important;
+  border-left: 4px solid #8B5E3C !important;
 }
 /* 行内代码加深 */
 .markdown-body code {
@@ -227,4 +220,21 @@ footer.footer [id*="busuanzi"] {
 blockquote {
   border-left-color: #8B5E3C !important;
   background: rgba(139,94,60,0.06) !important;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .home-sidebar-container { display: none !important; }
+  .article-content-container,
+  .toc-content-container .post-toc-wrap {
+    padding: 16px !important;
+    border-radius: 12px !important;
+  }
+  .navbar-container .navbar-content {
+    width: calc(100% - 8px) !important;
+    border-radius: 12px !important;
+  }
+  .markdown-body img[src*="/images/"]:not([src*="/emotes/"]) {
+    width: 100% !important;
+  }
 }

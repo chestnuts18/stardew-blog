@@ -4,6 +4,16 @@
    ================================================================ */
 @import url('/css/preview-fusion.css');
 
+/* APlayer 封面填满 */
+.aplayer-pic { background-size: cover !important; background-position: center !important; background-color: transparent !important; }
+.aplayer[class*="fixed"] { background: transparent !important; }
+.aplayer[class*="fixed"] .aplayer-body { background: transparent !important; }
+.aplayer[class*="fixed"] .aplayer-pic { border: none !important; }
+.aplayer[class*="fixed"] .aplayer-info { background: rgba(244,243,231,0.5) !important; backdrop-filter: blur(10px) !important; -webkit-backdrop-filter: blur(10px) !important; border: 1px solid rgba(0,71,60,0.06) !important; border-radius: 16px !important; box-shadow: 0 2px 16px rgba(0,71,60,0.08) !important; }
+.aplayer[class*="fixed"] .aplayer-info .aplayer-music .aplayer-title,
+.aplayer[class*="fixed"] .aplayer-info .aplayer-music .aplayer-author { color: var(--default-text-color) !important; }
+.aplayer[class*="fixed"] .aplayer-info .aplayer-time { color: var(--second-text-color) !important; }
+
 /* 导航栏标题 - 喵小姐字体 */
 @font-face {
   font-family: 'MiaoFont';
@@ -63,7 +73,7 @@
 /* 文章内表情包大小控制 */
 .markdown-body img[src*="/images/emotes/"] {
   display: inline-block;
-  max-width: 100px;
+  width: 80px !important;
   height: auto;
   vertical-align: middle;
   margin: 0 4px;

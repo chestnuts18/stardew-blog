@@ -157,7 +157,7 @@ https://www.nexusmods.com/stardewvalley/mods/【尾号数字】
 
 <img src="/images/4705.png" style="width:90%;">
 
-<h3 style="font-size:1.7rem;color:#0a1512">肖像美化 + 行走图 <img src="/images/emotes/kuri_画板_2026-08-02-03-59-32.gif" style="width:80px;display:inline;"></h3>
+<h3>肖像美化 + 行走图 <img src="/images/emotes/kuri_画板_2026-08-02-03-59-32.gif" style="width:80px;display:inline;"></h3>
 
 ### NYAPU 风格 <img src="/images/emotes/kuri_唱歌_2026-08-02-03-58-22.gif" style="width:80px;display:inline;">
 
@@ -186,7 +186,7 @@ https://www.nexusmods.com/stardewvalley/mods/【尾号数字】
 
 <img src="/images/城镇内部美化.png" style="width:90%;">
 
-<h3 style="font-size:1.7rem;color:#0a1512">鼠标指针美化 <img src="/images/emotes/kuri_催眠_2026-08-02-03-55-21.gif" style="width:80px;display:inline;"></h3>
+<h3>鼠标指针美化 <img src="/images/emotes/kuri_催眠_2026-08-02-03-55-21.gif" style="width:80px;display:inline;"></h3>
 
 ### 小青蛙指针 <img src="/images/emotes/kuri_Raid_1_2026-08-02-03-57-42.gif" style="width:80px;display:inline;">
 
