@@ -320,6 +320,11 @@ ff mmap cp 家具会直接在左边里展示出来
 
 ---
 
+## 🐤 小黄鸭窗口缩放工具
+
+一定不要用快捷键！选择你的星露谷配置 → 点击缩放 → 点击星露谷窗口，等待 5 秒就好
+
+<img src="/images/小黄鸭.png" style="width:90%;">
 
 <img src="/images/emotes/kuri_通知_提示_点赞_2026-08-02-03-51-21.gif" style="width:80px;display:inline;">
 
