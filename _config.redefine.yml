@@ -54,6 +54,11 @@ global:
   side_tools:
     gear_rotation: true
     auto_expand: false
+  custom_cursor:
+    enable: true
+    default: /images/cursor/pointer.ani
+    pointer: /images/cursor/link.ani
+    text: /images/cursor/text.ani
   open_graph:
     enable: true
     image: /images/og-image.jpg
@@ -246,7 +251,6 @@ inject:
   enable: true
   head:
     - '<link rel="stylesheet" href="/css/preloader.css">'
-    - '<style>*,html,body{cursor:url("data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22><circle cx=%2216%22 cy=%2216%22 r=%2212%22 fill=%22%23ff6b9d%22 stroke=%22%23fff%22 stroke-width=%222%22/></svg>")16 16,auto!important}</style>'
     - '<script>var _p=setInterval(function(){if(window.i18n&&window.i18n.runtime){window.i18n.runtime="🍓 草莓坚持营业";clearInterval(_p)}},10);function fixDom(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);var n;while(n=w.nextNode()){if(n.textContent.indexOf("博客已运行")!==-1)n.textContent=n.textContent.replace(/博客已运行/g,"🍓 草莓坚持营业");if(n.textContent.indexOf("访问人数")!==-1||n.textContent.indexOf("总访问量")!==-1)n.parentElement.style.display="none"}}document.addEventListener("DOMContentLoaded",fixDom);document.addEventListener("swup:contentReplaced",function(){setTimeout(fixDom,100)})</script>'
   footer:
     - '<link rel="stylesheet" href="/css/custom.css">'
