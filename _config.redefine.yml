@@ -246,7 +246,7 @@ inject:
   enable: true
   head:
     - '<link rel="stylesheet" href="/css/preloader.css">'
-    - '<style>html{cursor:url(/images/cursor/pointer.ani),auto!important}a,button,[role=button],.nav-link,.links{cursor:url(/images/cursor/link.ani),pointer!important}input,textarea,[contenteditable]{cursor:url(/images/cursor/text.ani),text!important}</style>'
+    - '<style>html{cursor:url("data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22><circle cx=%2212%22 cy=%2212%22 r=%228%22 fill=%22%23ff6b9d%22/></svg>")8 8,auto!important}a,button,[role=button],.nav-link,.links{cursor:url("data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22><circle cx=%2212%22 cy=%2212%22 r=%228%22 fill=%22%23c44dff%22/></svg>")8 8,pointer!important}</style>'
     - '<script>var _p=setInterval(function(){if(window.i18n&&window.i18n.runtime){window.i18n.runtime="🍓 草莓坚持营业";clearInterval(_p)}},10);function fixDom(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);var n;while(n=w.nextNode()){if(n.textContent.indexOf("博客已运行")!==-1)n.textContent=n.textContent.replace(/博客已运行/g,"🍓 草莓坚持营业");if(n.textContent.indexOf("访问人数")!==-1||n.textContent.indexOf("总访问量")!==-1)n.parentElement.style.display="none"}}document.addEventListener("DOMContentLoaded",fixDom);document.addEventListener("swup:contentReplaced",function(){setTimeout(fixDom,100)})</script>'
   footer:
     - '<link rel="stylesheet" href="/css/custom.css">'
