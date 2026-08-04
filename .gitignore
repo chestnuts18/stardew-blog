@@ -13,3 +13,4 @@ source/fonts/pixel-subset.*
 
 .vercel
 .env*
+.claude/
