@@ -1,0 +1,114 @@
+/* ================================================================
+   皮肤预览：sweetgreen / kofi 二选一
+   切换方法：改下面 import 的文件名即可
+   ================================================================ */
+@import url('/css/preview-fusion.css');
+
+/* 导航栏标题 - 喵小姐字体 */
+@font-face {
+  font-family: 'MiaoFont';
+  src: url('/fonts/miao-subset.woff2') format('woff2'), url('/fonts/miao.ttf');
+}
+.logo-title {
+  font-family: 'MiaoFont', 'ZCOOL XiaoWei', sans-serif !important;
+}
+
+/* ================================================================
+   全屏封面 → 下滑 → 导航栏 → 文章列表
+   ================================================================ */
+
+/* Banner 全屏 */
+.home-banner-background {
+  height: 100vh !important;
+}
+
+/* 仅首页：内容容器推到封面下方 */
+.home-page .main-content-container {
+  margin-top: 100vh !important;
+}
+
+/* 导航栏贴在内容区顶部 */
+.main-content-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+}
+.navbar-container {
+  position: static !important;
+}
+/* 导航栏背景由预览皮肤控制 */
+
+/* ================================================================
+   目录（TOC）层级字体区分
+   ================================================================ */
+.post-toc-wrap .post-toc .toc-title {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem !important;
+}
+
+/* H2 一级标题：大一点 + 加粗 */
+.post-toc-wrap .post-toc .nav-level-2 > .nav-link {
+  font-size: 0.95rem !important;
+  font-weight: 600;
+}
+
+/* H3 二级标题：小一点 + 常规粗细 */
+.post-toc-wrap .post-toc .nav-level-3 > .nav-link {
+  font-size: 0.8rem !important;
+  font-weight: 400;
+}
+
+/* 文章内表情包大小控制 */
+.markdown-body img[src*="/images/emotes/"] {
+  display: inline-block;
+  max-width: 100px;
+  height: auto;
+  vertical-align: middle;
+  margin: 0 4px;
+  image-rendering: pixelated;
+}
+
+/* 下滑提示 */
+.scroll-hint {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  z-index: 10;
+  cursor: pointer;
+  animation: float 2s ease-in-out infinite;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.scroll-hint img {
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+}
+/* 鼠标滚轮图标 */
+.scroll-hint .mouse-icon {
+  width: 26px; height: 42px;
+  border: 2px solid rgba(255,255,255,0.8);
+  border-radius: 14px;
+  margin: 0 auto 8px;
+  position: relative;
+}
+.scroll-hint .mouse-wheel {
+  width: 4px; height: 8px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 2px;
+  position: absolute;
+  top: 6px; left: 50%;
+  transform: translateX(-50%);
+  animation: wheelScroll 1.5s ease-in-out infinite;
+}
+@keyframes wheelScroll {
+  0% { opacity: 1; top: 6px; }
+  100% { opacity: 0; top: 24px; }
+}
+@keyframes float {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cursor-Effects · 跟随下落式</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #E8D7F9; min-height: 100vh; cursor: none; font-family: 'ZCOOL XiaoWei', 'Noto Sans SC', sans-serif; }
+  .overlay { position: fixed; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; pointer-events: none; }
+  .center-text { font-size: 2.5rem; color: #3a2060; text-shadow: 0 0 30px rgba(232,215,249,0.9); }
+  .label { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 10; background: rgba(255,255,255,0.8); padding: 6px 18px; border-radius: 20px; font-size: 0.85rem; color: #3a2060; }
+  .controls { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 12px; }
+  .controls button, .controls a {
+    background: rgba(255,255,255,0.85);
+    border: 1px solid rgba(58,32,96,0.15);
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #3a2060;
+    cursor: pointer;
+    text-decoration: none;
+    backdrop-filter: blur(8px);
+    transition: transform 0.15s;
+  }
+  .controls button:hover, .controls a:hover { transform: scale(1.05); }
+  .hint { position: fixed; top: 70px; left: 50%; transform: translateX(-50%); z-index: 10; font-size: 0.85rem; color: #6b5b8a; }
+</style>
+</head>
+<body>
+<div class="overlay"><span class="center-text">草莓麻薯冰淇淋</span></div>
+<div class="label">🌧️ Cursor-Effects · emoji 跟随式</div>
+<div class="hint">移动鼠标看效果 ← 注意：这个是跟随鼠标的，不太适合做开场动画</div>
+<div class="controls">
+  <a href="/test/">← 返回选择</a>
+</div>
+<script src="/js/cursor-effects.js"></script>
+<script>
+// emojiCursor 只能用 emoji 文字，不能用 GIF 图片
+// 用 kuri 相关 emoji 代替
+new cursoreffects.emojiCursor({
+  emoji: ["🎉", "🎊", "💝", "🍓", "🍰", "✨", "💕", "🎀", "🌸", "⭐", "🎵", "🎸", "💌", "🍩", "🧋", "🎁", "💫", "🫧", "🎂", "🍉"]
+});
+</script>
+</body>
+</html>

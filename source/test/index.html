@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>开场动画测试 - 三选一</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'ZCOOL XiaoWei', 'Noto Sans SC', sans-serif;
+    background: #E8D7F9;
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .container { text-align: center; }
+  h1 { font-size: 2.5rem; color: #3a2060; margin-bottom: 1rem; }
+  p { color: #6b5b8a; margin-bottom: 2.5rem; font-size: 1.1rem; }
+  .cards { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 32px 28px;
+    width: 240px;
+    text-decoration: none;
+    color: #3a2060;
+    box-shadow: 0 4px 24px rgba(58,32,96,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(58,32,96,0.14); }
+  .card .emoji { font-size: 3rem; margin-bottom: 12px; }
+  .card h3 { font-size: 1.2rem; margin-bottom: 6px; }
+  .card span { font-size: 0.85rem; color: #8b7ba8; }
+  .back { margin-top: 2rem; font-size: 0.9rem; color: #8b7ba8; }
+  .back a { color: #3a2060; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🎆 开场动画三选一</h1>
+  <p>点击卡片查看效果，选一个最喜欢的</p>
+  <div class="cards">
+    <a href="/test/particles/" class="card">
+      <div class="emoji">💥</div>
+      <h3>Particles-JS</h3>
+      <span>烟花爆炸式 · 四面八方</span>
+    </a>
+    <a href="/test/confettea/" class="card">
+      <div class="emoji">🎊</div>
+      <h3>Confettea</h3>
+      <span>纸屑喷发式 · 轻量快速</span>
+    </a>
+    <a href="/test/cursor/" class="card">
+      <div class="emoji">🌧️</div>
+      <h3>Cursor-Effects</h3>
+      <span>emoji下落式 · 持续飘落</span>
+    </a>
+    <a href="/test/custom-firework/" class="card" style="border: 2px solid #3a2060;">
+      <div class="emoji">🎇</div>
+      <h3>自定义 DOM 烟花 ⭐</h3>
+      <span>GIF能动 · 速度可控 · 纯手写</span>
+    </a>
+  </div>
+  <p class="back"><a href="/">← 返回博客</a></p>
+</div>
+</body>
+</html>

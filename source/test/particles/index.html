@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Particles-JS · 烟花爆炸式</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #E8D7F9; overflow: hidden; font-family: 'ZCOOL XiaoWei', 'Noto Sans SC', sans-serif; }
+  #particles-container { position: fixed; inset: 0; z-index: 1; }
+  .overlay { position: fixed; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; pointer-events: none; }
+  .center-text { font-size: 2.5rem; color: #3a2060; text-shadow: 0 0 30px rgba(232,215,249,0.9); }
+  .controls { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 12px; }
+  .controls button, .controls a {
+    background: rgba(255,255,255,0.85);
+    border: 1px solid rgba(58,32,96,0.15);
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #3a2060;
+    cursor: pointer;
+    text-decoration: none;
+    backdrop-filter: blur(8px);
+    transition: transform 0.15s;
+  }
+  .controls button:hover, .controls a:hover { transform: scale(1.05); }
+  .label { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 10; background: rgba(255,255,255,0.8); padding: 6px 18px; border-radius: 20px; font-size: 0.85rem; color: #3a2060; }
+</style>
+</head>
+<body>
+<div id="particles-container"></div>
+<div class="overlay"><span class="center-text">草莓麻薯冰淇淋</span></div>
+<div class="label">💥 Particles-JS · 烟花爆炸式</div>
+<div class="controls">
+  <a href="/test/">← 返回选择</a>
+  <button onclick="fireBurst()">🎆 点我放烟花</button>
+</div>
+<script src="/js/particles-js.js"></script>
+<script>
+// 用15个代表性 kuri 表情
+var kuriEmotes = [
+  "/images/preload/kuri_庆祝_2026-08-02-03-52-10.gif",
+  "/images/preload/kuri_爱心_1_2026-08-02-03-56-10.gif",
+  "/images/preload/kuri_爱心_2_2026-08-02-03-56-13.gif",
+  "/images/preload/kuri_爱心_3_2026-08-02-03-56-17.gif",
+  "/images/preload/kuri_情书_2026-08-02-03-55-59.gif",
+  "/images/preload/kuri_点赞_2026-08-02-04-00-07.gif",
+  "/images/preload/kuri_玫瑰_2026-08-02-03-57-59.gif",
+  "/images/preload/kuri_礼物_1_2026-08-02-03-54-53.gif",
+  "/images/preload/kuri_礼物_2_2026-08-02-03-54-57.gif",
+  "/images/preload/kuri_唱歌_2026-08-02-03-58-22.gif",
+  "/images/preload/kuri_跳舞Caramelldansen_2026-08-02-03-53-02.gif",
+  "/images/preload/kuri_荧光棒_1_2026-08-02-03-55-52.gif",
+  "/images/preload/kuri_荧光棒_2_2026-08-02-03-55-56.gif",
+  "/images/preload/kuri_干杯_2026-08-02-03-52-17.gif",
+  "/images/preload/kuri_眨眼_2026-08-02-04-00-33.gif"
+];
+
+Particles.init({
+  container: 'particles-container',
+  type: 'image',
+  imageUrl: kuriEmotes,
+  mode: 'firework',
+  count: 0,
+  backgroundParticles: true,
+  burst: true,
+  trails: true,
+  trailLength: 10,
+  trailOpacity: 0.5,
+  sizeMin: 25,
+  sizeMax: 55,
+  gravity: 0.12,
+  rotationSpeed: 0.04,
+  spawnRate: 0.025,
+  opacity: 0.9,
+});
+
+function fireBurst() {
+  var c = document.getElementById('particles-container');
+  var rect = c.getBoundingClientRect();
+  var cx = rect.width / 2 + (Math.random() - 0.5) * 200;
+  var cy = rect.height / 2 + (Math.random() - 0.5) * 200;
+  var evt = new MouseEvent('click', { clientX: cx + rect.left, clientY: cy + rect.top });
+  c.dispatchEvent(evt);
+}
+</script>
+</body>
+</html>

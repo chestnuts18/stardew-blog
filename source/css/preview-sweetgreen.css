@@ -1,0 +1,25 @@
+/* sweetgreen: 农场小黑板 @ 金色时刻 */
+:root {
+  --primary-color: #00473c !important;
+  --background-color: #f4f3e7 !important;
+  --second-background-color: #e8dcc6 !important;
+  --default-text-color: #0e150e !important;
+  --second-text-color: #5c6b5c !important;
+}
+/* 卡片/导航毛玻璃 */
+.navbar-content {
+  background: rgba(244, 243, 231, 0.92) !important;
+}
+/* 链接/按钮点缀 */
+a, .nav-link:hover, .active > a .nav-text {
+  color: #00473c !important;
+}
+/* 荧光青柠高亮 */
+::selection {
+  background: #e6ff55 !important;
+  color: #00473c !important;
+}
+blockquote {
+  border-left-color: #e6ff55 !important;
+  background: #e8dcc6 !important;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confettea · 纸屑喷发式</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #E8D7F9; overflow: hidden; font-family: 'ZCOOL XiaoWei', 'Noto Sans SC', sans-serif; }
+  .overlay { position: fixed; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; pointer-events: none; }
+  .center-text { font-size: 2.5rem; color: #3a2060; text-shadow: 0 0 30px rgba(232,215,249,0.9); }
+  .controls { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 12px; }
+  .controls button, .controls a {
+    background: rgba(255,255,255,0.85);
+    border: 1px solid rgba(58,32,96,0.15);
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #3a2060;
+    cursor: pointer;
+    text-decoration: none;
+    backdrop-filter: blur(8px);
+    transition: transform 0.15s;
+  }
+  .controls button:hover, .controls a:hover { transform: scale(1.05); }
+  .label { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 10; background: rgba(255,255,255,0.8); padding: 6px 18px; border-radius: 20px; font-size: 0.85rem; color: #3a2060; }
+</style>
+</head>
+<body>
+<div class="overlay"><span class="center-text">草莓麻薯冰淇淋</span></div>
+<div class="label">🎊 Confettea · 纸屑喷发式</div>
+<div class="controls">
+  <a href="/test/">← 返回选择</a>
+  <button onclick="doBurst()">🎆 再炸一次</button>
+</div>
+<script src="/js/confettea.js"></script>
+<script>
+var kuriEmotes = [
+  "/images/preload/kuri_庆祝_2026-08-02-03-52-10.gif",
+  "/images/preload/kuri_爱心_1_2026-08-02-03-56-10.gif",
+  "/images/preload/kuri_爱心_2_2026-08-02-03-56-13.gif",
+  "/images/preload/kuri_爱心_3_2026-08-02-03-56-17.gif",
+  "/images/preload/kuri_情书_2026-08-02-03-55-59.gif",
+  "/images/preload/kuri_点赞_2026-08-02-04-00-07.gif",
+  "/images/preload/kuri_玫瑰_2026-08-02-03-57-59.gif",
+  "/images/preload/kuri_礼物_1_2026-08-02-03-54-53.gif",
+  "/images/preload/kuri_礼物_2_2026-08-02-03-54-57.gif",
+  "/images/preload/kuri_唱歌_2026-08-02-03-58-22.gif",
+  "/images/preload/kuri_跳舞Caramelldansen_2026-08-02-03-53-02.gif",
+  "/images/preload/kuri_荧光棒_1_2026-08-02-03-55-52.gif",
+  "/images/preload/kuri_荧光棒_2_2026-08-02-03-55-56.gif",
+  "/images/preload/kuri_干杯_2026-08-02-03-52-17.gif",
+  "/images/preload/kuri_眨眼_2026-08-02-04-00-33.gif",
+  "/images/preload/kuri_吃(甜甜圈)_2026-08-04-23-15-34.gif",
+  "/images/preload/kuri_吃爆米花_2026-08-02-03-54-05.gif",
+  "/images/preload/kuri_喝饮料杯_2026-08-02-03-53-23.gif",
+  "/images/preload/kuri_吉他_2026-08-02-03-55-07.gif",
+  "/images/preload/kuri_六七_2026-08-02-03-58-26.gif",
+  "/images/preload/kuri_摸头_2026-08-02-03-57-05.gif",
+  "/images/preload/kuri_钱_2026-08-02-03-56-28.gif",
+  "/images/preload/kuri_要米_2026-08-02-03-56-39.gif",
+  "/images/preload/kuri_期待_1_2026-08-02-03-58-53.gif",
+  "/images/preload/kuri_期待_2_2026-08-02-03-58-57.gif",
+  "/images/preload/kuri_摇铃_2026-08-02-03-51-42.gif",
+  "/images/preload/kuri_害羞_1_2026-08-02-03-58-15.gif",
+  "/images/preload/kuri_害羞_2_2026-08-02-03-58-18.gif",
+  "/images/preload/kuri_打招呼_1_2026-08-02-03-55-00.gif",
+  "/images/preload/kuri_打招呼_2_2026-08-02-03-55-04.gif"
+];
+
+// 自动发射
+function doBurst() {
+  confettea.default.burst({
+    particleCount: 200,
+    spread: 120,
+    origin: { x: 0.5, y: 0.5 },
+    images: kuriEmotes,
+    shapes: ['square'],
+    colors: [],
+    ticks: 400,
+    gravity: 0.6,
+    decay: 0.94,
+    startVelocity: 45,
+  });
+}
+
+// 页面加载时自动来一发
+setTimeout(doBurst, 500);
+// 1.5秒后再补一发
+setTimeout(doBurst, 1800);
+</script>
+</body>
+</html>

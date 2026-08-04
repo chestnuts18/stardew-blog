@@ -1,0 +1,230 @@
+/* ================================================================
+   融合皮肤：sweetgreen奶油画布 + 深绿 + Ko-fi一点蓝
+   覆盖 Redefine 主题全部颜色变量
+   ================================================================ */
+
+:root {
+  /* 底色系 — sweetgreen Cream Canvas */
+  --background-color: #f4f3e7 !important;
+  --background-color-transparent: rgba(244, 243, 231, 0.6) !important;
+  --background-color-transparent-15: rgba(244, 243, 231, 0.15) !important;
+  --background-color-transparent-40: rgba(244, 243, 231, 0.4) !important;
+  --background-color-transparent-80: rgba(244, 243, 231, 0.8) !important;
+
+  /* 卡片/区块底色 — Ko-fi Morning Fog */
+  --second-background-color: #e5e7eb !important;
+  --third-background-color-transparent: rgba(229, 231, 235, 0.6) !important;
+
+  /* 主色 — sweetgreen Deep Forest */
+  --primary-color: #00473c !important;
+  --selection-color: #aac9f7 !important;
+
+  /* 文字 */
+  --default-text-color: #1a2220 !important;
+  --second-text-color: #4a5c56 !important;
+  --third-text-color: #6b7d77 !important;
+
+  /* 边框 */
+  --border-color: rgba(0, 71, 60, 0.1) !important;
+
+  /* 阴影 */
+  --shadow-color-1: rgba(0, 71, 60, 0.06) !important;
+  --shadow-color-2: rgba(0, 71, 60, 0.04) !important;
+  --shadow-hover-color: rgba(0, 71, 60, 0.18) !important;
+}
+
+/* 导航栏容器（去掉主题默认的蓝色渐变+模糊） */
+.navbar-container {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+/* 导航栏内容 */
+.navbar-container .navbar-content {
+  background: rgba(222, 210, 182, 0.94) !important;
+  border: 1px solid rgba(0, 71, 60, 0.1) !important;
+  border-radius: 16px !important;
+  margin-top: 8px !important;
+  width: calc(100% - 16px) !important;
+  box-shadow: 0 2px 16px rgba(0, 71, 60, 0.08) !important;
+}
+
+/* 导航栏容器留白，让圆角可见 */
+.navbar-container {
+  padding: 0 8px !important;
+}
+
+/* 全局小豆泥动态光标 */
+* { cursor: url(/images/cursor/pointer.ani), auto; }
+a, button, [role=button], .nav-link, .links { cursor: url(/images/cursor/link.ani), pointer; }
+input, textarea, [contenteditable] { cursor: url(/images/cursor/text.ani), text; }
+
+/* 文章内容区毛玻璃 */
+.article-content-container,
+.toc-content-container .post-toc-wrap {
+  background: rgba(244, 243, 231, 0.65) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(0, 71, 60, 0.06) !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+}
+.markdown-body {
+  background: transparent !important;
+}
+
+/* 侧边栏 — 整张卡片毛玻璃 */
+.home-sidebar-container .sticky-container {
+  background: rgba(244, 243, 231, 0.65) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(0, 71, 60, 0.06) !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+.home-sidebar-container .sidebar-content,
+.home-sidebar-container .sidebar-links {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  margin-top: 0 !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+.home-sidebar-container .sidebar-links {
+  padding-bottom: 14px !important;
+}
+/* 干掉模板自带间隙 */
+.home-sidebar-container .sidebar-links[marginTop] {
+  margin-top: 0 !important;
+}
+/* 隐藏重复网站名 + 空公告 */
+.home-sidebar-container .sidebar-links .site-info,
+.home-sidebar-container .sidebar-links .announcement,
+.home-sidebar-container .sidebar-links .announcement-outside {
+  display: none !important;
+}
+/* 链接样式 */
+.home-sidebar-container .sidebar-links .links {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 0 !important;
+  font-size: 0.9rem !important;
+  color: var(--default-text-color) !important;
+}
+
+/* 礼物图库 */
+.gift-gallery {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+  gap: 12px !important;
+}
+.gift-gallery img {
+  width: 100% !important;
+  border-radius: 12px !important;
+  transition: transform 0.2s !important;
+}
+.gift-gallery img:hover {
+  transform: scale(1.03) !important;
+}
+
+/* 隐藏vercount统计 */
+#busuanzi_container_site_uv,
+#busuanzi_container_site_pv,
+footer.footer [id*="busuanzi"] {
+  display: none !important;
+}
+
+/* 文章排版优化 */
+.markdown-body h2 {
+  font-size: 1.5rem !important;
+  margin-top: 2.2rem !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 2px solid rgba(0,71,60,0.1) !important;
+}
+.markdown-body h3 {
+  font-size: 1.2rem !important;
+  margin-top: 1.6rem !important;
+  margin-bottom: 0.6rem !important;
+}
+.markdown-body p {
+  margin-bottom: 0.9rem !important;
+}
+.markdown-body li {
+  margin-bottom: 0.25rem !important;
+}
+/* 分割线美化 */
+.markdown-body hr {
+  border: none !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(0,71,60,0.12), transparent) !important;
+  margin: 2rem 0 !important;
+}
+/* 图片加轻微浮起 */
+.markdown-body img[src*="/images/"]:not([src*="/emotes/"]) {
+  border-radius: 12px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+  margin: 0.8rem 0 !important;
+  transition: box-shadow 0.2s !important;
+}
+.markdown-body img[src*="/images/"]:not([src*="/emotes/"]):hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* 链接悬停 */
+.markdown-body a:hover {
+  color: #8B5E3C !important;
+  text-decoration: underline wavy rgba(139,94,60,0.3) !important;
+  text-underline-offset: 3px !important;
+}
+/* 列表项符号 */
+.markdown-body ul > li::marker {
+  color: #00473c !important;
+}
+/* 表格 */
+.markdown-body table {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04) !important;
+}
+.markdown-body th {
+  background: rgba(0,71,60,0.08) !important;
+  color: #00473c !important;
+}
+/* 代码块 */
+.markdown-body code {
+  background: rgba(139,94,60,0.08) !important;
+  color: #6B3A2A !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+}
+/* note 提示框 */
+.markdown-body .note {
+  border-radius: 10px !important;
+  padding: 1rem 1.2rem !important;
+}
+.markdown-body .note.info {
+  background: rgba(0,71,60,0.05) !important;
+  border-left: 4px solid #00473c !important;
+}
+.markdown-body .note.success {
+  background: rgba(0,71,60,0.04) !important;
+  border-left: 4px solid #00473c !important;
+}
+/* 行内代码加深 */
+.markdown-body code {
+  background: rgba(139,94,60,0.1) !important;
+  color: #5C3A1E !important;
+  font-weight: 500 !important;
+}
+
+/* 引用块 */
+blockquote {
+  border-left-color: #8B5E3C !important;
+  background: rgba(139,94,60,0.06) !important;
+}

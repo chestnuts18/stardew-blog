@@ -1,0 +1,27 @@
+/* Ko-fi: 温暖咖啡馆黑板 @ 奶油纸 */
+:root {
+  --primary-color: #202020 !important;
+  --background-color: #e9dfd2 !important;
+  --second-background-color: #e5e7eb !important;
+  --default-text-color: #202020 !important;
+  --second-text-color: #6b6b6b !important;
+}
+/* 导航栏 */
+.navbar-content {
+  background: rgba(233, 223, 210, 0.92) !important;
+}
+/* 唯一彩色点缀：Ko-fi 蓝 */
+a, .nav-link:hover, .active > a .nav-text {
+  color: #202020 !important;
+}
+a:hover {
+  color: #5b8ecf !important;
+}
+::selection {
+  background: #aac9f7 !important;
+  color: #202020 !important;
+}
+blockquote {
+  border-left-color: #aac9f7 !important;
+  background: #e5e7eb !important;
+}

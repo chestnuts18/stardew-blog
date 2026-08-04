@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Firework · 自定义烟花</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #E8D7F9; overflow: hidden; font-family: 'ZCOOL XiaoWei', 'Noto Sans SC', sans-serif; }
+  #stage { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
+  .particle {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    animation: burstParticle 2.5s ease-out forwards;
+  }
+  @keyframes burstParticle {
+    0%   { transform: translate(-50%,-50%) translate(0px,0px) rotate(0deg) scale(1); opacity: 1; }
+    60%  { opacity: 0.8; }
+    100% { transform: translate(-50%,-50%) translate(var(--dx),var(--dy)) rotate(var(--rot)) scale(0.4); opacity: 0; }
+  }
+  @font-face {
+    font-family: 'MiaoFont';
+    src: url('/fonts/miao.ttf');
+  }
+  .overlay { position: fixed; inset: 0; z-index: 10; display: flex; align-items: center; justify-content: center; pointer-events: none; }
+  .center-text { font-family: 'MiaoFont', sans-serif; font-size: 4rem; color: #5b2c8a;
+    text-shadow: 0 0 12px rgba(200,160,255,0.5), 0 0 30px rgba(180,130,255,0.3);
+  }
+  .center-text .char {
+    display: inline-block;
+    font-family: inherit;
+    animation: charBounce 0.9s cubic-bezier(0.18,0.89,0.32,1.28) forwards;
+  }
+  @keyframes charBounce {
+    0%   { opacity: 0; transform: translateY(-120px) scale(0) rotate(-45deg); }
+    50%  { opacity: 1; transform: translateY(15px) scale(1.4) rotate(10deg); }
+    70%  { transform: translateY(-8px) scale(0.85) rotate(-5deg); }
+    85%  { transform: translateY(4px) scale(1.06) rotate(2deg); }
+    100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+  }
+  .label { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 20; background: rgba(255,255,255,0.8); padding: 6px 18px; border-radius: 20px; font-size: 0.85rem; color: #3a2060; }
+  .controls { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 20; display: flex; gap: 12px; }
+  .controls button, .controls a {
+    background: rgba(255,255,255,0.85);
+    border: 1px solid rgba(58,32,96,0.15);
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #3a2060;
+    cursor: pointer;
+    text-decoration: none;
+    backdrop-filter: blur(8px);
+    transition: transform 0.15s;
+  }
+  .controls button:hover, .controls a:hover { transform: scale(1.05); }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div class="overlay"><span class="center-text" id="title-text">草莓麻薯冰淇淋</span></div>
+<div class="label">🎆 自定义 DOM 烟花 · GIF 能动能动！</div>
+<div class="controls">
+  <a href="/test/">← 返回</a>
+  <button onclick="firework()">🎆 来一发</button>
+  <button onclick="fireworkBig()">💥 大范围爆</button>
+</div>
+
+<script>
+var stage = document.getElementById('stage');
+
+var emotes = [
+  "kuri_庆祝_2026-08-02-03-52-10.gif",
+  "kuri_爱心_1_2026-08-02-03-56-10.gif",
+  "kuri_爱心_2_2026-08-02-03-56-13.gif",
+  "kuri_爱心_3_2026-08-02-03-56-17.gif",
+  "kuri_情书_2026-08-02-03-55-59.gif",
+  "kuri_点赞_2026-08-02-04-00-07.gif",
+  "kuri_玫瑰_2026-08-02-03-57-59.gif",
+  "kuri_礼物_1_2026-08-02-03-54-53.gif",
+  "kuri_礼物_2_2026-08-02-03-54-57.gif",
+  "kuri_唱歌_2026-08-02-03-58-22.gif",
+  "kuri_跳舞Caramelldansen_2026-08-02-03-53-02.gif",
+  "kuri_荧光棒_1_2026-08-02-03-55-52.gif",
+  "kuri_荧光棒_2_2026-08-02-03-55-56.gif",
+  "kuri_干杯_2026-08-02-03-52-17.gif",
+  "kuri_眨眼_2026-08-02-04-00-33.gif",
+  "kuri_吃(甜甜圈)_2026-08-04-23-15-34.gif",
+  "kuri_吃爆米花_2026-08-02-03-54-05.gif",
+  "kuri_喝饮料杯_2026-08-02-03-53-23.gif",
+  "kuri_吉他_2026-08-02-03-55-07.gif",
+  "kuri_六七_2026-08-02-03-58-26.gif",
+  "kuri_摸头_2026-08-02-03-57-05.gif",
+  "kuri_钱_2026-08-02-03-56-28.gif",
+  "kuri_要米_2026-08-02-03-56-39.gif",
+  "kuri_期待_1_2026-08-02-03-58-53.gif",
+  "kuri_期待_2_2026-08-02-03-58-57.gif",
+  "kuri_摇铃_2026-08-02-03-51-42.gif",
+  "kuri_害羞_1_2026-08-02-03-58-15.gif",
+  "kuri_害羞_2_2026-08-02-03-58-18.gif",
+  "kuri_打招呼_1_2026-08-02-03-55-00.gif",
+  "kuri_打招呼_2_2026-08-02-03-55-04.gif",
+  "kuri_抓拍手机_2026-08-02-03-52-02.gif",
+  "kuri_抓拍摄像机_2026-08-02-03-52-06.gif",
+  "kuri_馋刀叉_2026-08-02-03-53-33.gif",
+  "kuri_馋筷子_2026-08-02-03-53-30.gif",
+  "kuri_红包_1_2026-08-02-03-57-49.gif",
+  "kuri_打游戏_2026-08-02-03-54-32.gif",
+  "kuri_电风扇1_2026-08-02-03-54-11.gif",
+  "kuri_电风扇2_2026-08-02-03-54-15.gif",
+  "kuri_画板_2026-08-02-03-59-32.gif",
+  "kuri_催眠_2026-08-02-03-55-21.gif",
+  "kuri_加油_2026-08-02-03-52-13.gif",
+  "kuri_笑_2026-08-02-03-55-42.gif",
+  "kuri_扩音器_2026-08-02-03-56-24.gif",
+  "kuri_舔舔_2026-08-02-03-55-49.gif",
+  "kuri_像素墨镜反光_2026-08-02-03-59-14.gif",
+  "kuri_墨镜反光_2026-08-02-03-59-07.gif",
+  "kuri_主意_2026-08-02-03-55-25.gif",
+  "kuri_喷剂_2026-08-02-03-59-00.gif",
+  "kuri_思考自信地_2026-08-02-03-59-45.gif",
+  "kuri_跳舞低皮质醇_2026-08-02-03-53-09.gif",
+  "kuri_通知_提示_硬币_2026-08-02-03-51-14.gif",
+  "kuri_带薪拉屎简单模式_2026-08-02-03-56-57.gif"
+];
+
+function firework(cx, cy, count) {
+  count = count || 50 + Math.floor(Math.random() * 30);
+
+  for (var i = 0; i < count; i++) {
+    var img = document.createElement('img');
+    img.className = 'particle';
+    img.src = encodeURI('/images/preload/' + emotes[Math.floor(Math.random() * emotes.length)]);
+    var size = 45 + Math.random() * 70;
+    img.style.width = size + 'px';
+    img.style.height = size + 'px';
+    img.style.left = cx + 'px';
+    img.style.top = cy + 'px';
+
+    var angle = (i / count) * Math.PI * 2 + (Math.random() - 0.5) * 0.2;
+    var dist = 120 + Math.random() * 480;
+    var dx = Math.cos(angle) * dist;
+    var dy = Math.sin(angle) * dist - 20 - Math.random() * 40;
+    var rot = (Math.random() - 0.5) * 360;
+    var delay = Math.random() * 0.1;
+
+    img.style.setProperty('--dx', dx + 'px');
+    img.style.setProperty('--dy', dy + 'px');
+    img.style.setProperty('--rot', rot + 'deg');
+    img.style.animationDelay = delay + 's';
+    img.style.animationDuration = (2 + Math.random() * 1.5) + 's';
+
+    stage.appendChild(img);
+
+    setTimeout(function() { img.remove(); }, 4000);
+  }
+}
+
+function fireworkBig() {
+  var cx = window.innerWidth * 0.5;
+  var cy = window.innerHeight * 0.5;
+  firework(cx, cy, 250);
+}
+
+// Split title into animated characters
+(function() {
+  var title = document.getElementById('title-text');
+  var text = title.textContent;
+  title.textContent = '';
+  for (var i = 0; i < text.length; i++) {
+    var span = document.createElement('span');
+    span.className = 'char';
+    span.textContent = text[i];
+    span.style.animationDelay = (0.3 + i * 0.1) + 's';
+    title.appendChild(span);
+  }
+})();
+
+// Auto launch
+setTimeout(function() { fireworkBig(); }, 400);
+</script>
+</body>
+</html>
