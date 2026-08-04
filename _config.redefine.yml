@@ -56,9 +56,9 @@ global:
     auto_expand: false
   custom_cursor:
     enable: true
-    default: /images/cursor/default.png
-    pointer: /images/cursor/pointer.png
-    text: /images/cursor/text.png
+    default: /images/cursor/pointer.ani
+    pointer: /images/cursor/link.ani
+    text: /images/cursor/text.ani
   open_graph:
     enable: true
     image: /images/og-image.jpg
