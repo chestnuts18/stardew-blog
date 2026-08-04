@@ -2,5 +2,13 @@
   "buildCommand": "hexo generate",
   "outputDirectory": "public",
   "framework": "hexo",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/images/cursor/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "image/x-icon" }
+      ]
+    }
+  ]
 }
