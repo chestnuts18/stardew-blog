@@ -1,0 +1,6 @@
+{
+  "buildCommand": "hexo generate",
+  "outputDirectory": "public",
+  "framework": "hexo",
+  "cleanUrls": true
+}
