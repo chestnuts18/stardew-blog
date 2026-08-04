@@ -53,7 +53,7 @@ https://www.nexusmods.com/stardewvalley/mods/【尾号数字】
 
 > **主播所有 mod 合集看这里！**
 
-🔗 [https://modlists.barleyzp.com/mod-lists/6a577300f1161f51ec27e15a](https://modlists.barleyzp.com/mod-lists/6a577300f1161f51ec27e15a)
+🔗 [https://modlists.barleyzp.com/mod-lists/6a727003f1161f51ec27e184]
 
 复制粘贴到电脑浏览器打开，有链接点击就可以**直接跳转 N网**，没有就在 N网搜索作者找即可。
 
@@ -320,7 +320,7 @@ ff mmap cp 家具会直接在左边里展示出来
 
 ---
 
-## 🐤 小黄鸭窗口缩放工具
+## 🐤 小黄鸭窗口缩放工具 <img src="/images/preload/kuri_自我安慰_2026-08-02-03-52-34.gif" style="width:80px;display:inline;">
 
 一定不要用快捷键！选择你的星露谷配置 → 点击缩放 → 点击星露谷窗口，等待 5 秒就好
 
