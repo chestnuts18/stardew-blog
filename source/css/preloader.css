@@ -5,9 +5,9 @@
 }
 
 :root { --z-preloader: 99999; --z-overlay: 10; }
-html { cursor: url(/images/cursor/pointer.ani), auto !important; }
-a, button, [role=button], .nav-link, .links { cursor: url(/images/cursor/link.ani), pointer !important; }
-input, textarea, [contenteditable] { cursor: url(/images/cursor/text.ani), text !important; }
+html { cursor: url(/images/cursor/move.cur), auto !important; }
+a, button, [role=button], .nav-link, .links { cursor: url(/images/cursor/cross.cur), pointer !important; }
+input, textarea, [contenteditable] { cursor: url(/images/cursor/cross.cur), text !important; }
 
 #kuri-preloader {
   position: fixed; z-index: var(--z-preloader); inset: 0;
