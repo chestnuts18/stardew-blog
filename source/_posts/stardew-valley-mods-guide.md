@@ -53,7 +53,7 @@ https://www.nexusmods.com/stardewvalley/mods/【尾号数字】
 
 > **主播所有 mod 合集看这里！**
 
-🔗 [https://modlists.barleyzp.com/mod-lists/6a727003f1161f51ec27e184]
+🔗 [主播所有 mod 合集看这里！](https://modlists.barleyzp.com/mod-lists/6a727003f1161f51ec27e184)
 
 复制粘贴到电脑浏览器打开，有链接点击就可以**直接跳转 N网**，没有就在 N网搜索作者找即可。
 
