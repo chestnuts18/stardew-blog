@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+<%- partial('components/header/head') %>
+
+<body>
+    <!-- preloader 直接写在这里，不用 document.write 避免浏览器解析问题 -->
+    <div id="kuri-preloader"><div class="emote-rain" id="emote-rain"></div><div class="overlay"><span class="center-text" id="pl-title">草莓麻薯冰淇淋</span></div></div>
+    <%- body %>
+    <%- partial('components/scripts') %>
+    <% if (theme.plugins.aplayer.enable) { %>
+    <%- partial('components/plugins/aplayer') %>
+    <% } %>
+</body>
+
+</html>
