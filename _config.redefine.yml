@@ -252,7 +252,7 @@ inject:
   head:
     - '<link rel="stylesheet" href="/css/preloader.css">'
     - '<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>'
-    - '<style>#kuri-preloader{display:none}</style>'
+    - '<script>if(!sessionStorage.getItem("pl")){document.write("\x3cdiv id=\"kuri-preloader\" style=\"position:fixed;top:0;left:0;width:100%;height:100%;z-index:10000;background:#E8D7F9;overflow:hidden\"><div class=\"emote-rain\" id=\"emote-rain\"></div><div class=\"overlay\"><span class=\"center-text\" id=\"pl-title\">草莓麻薯冰淇淋</span></div></div>")}</script>'
     - '<script>var _p=setInterval(function(){if(window.i18n&&window.i18n.runtime){window.i18n.runtime="🍓 草莓坚持营业";clearInterval(_p)}},10);function fixDom(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);var n;while(n=w.nextNode()){if(n.textContent.indexOf("博客已运行")!==-1)n.textContent=n.textContent.replace(/博客已运行/g,"🍓 草莓坚持营业");if(n.textContent.indexOf("访问人数")!==-1||n.textContent.indexOf("总访问量")!==-1)n.parentElement.style.display="none"}}document.addEventListener("DOMContentLoaded",fixDom);document.addEventListener("swup:willReplaceContent",function(){window.scrollTo(0,0)});document.addEventListener("swup:contentReplaced",function(){window.scrollTo(0,0);setTimeout(fixDom,100)})</script>'
   footer:
     - '<link rel="stylesheet" href="/css/custom.css">'
