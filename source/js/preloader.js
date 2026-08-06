@@ -31,6 +31,7 @@
 
   // ── DOM烟花爆发 ──────────────────────────────────
   var R = document.getElementById("emote-rain");
+  if (!R) return;
 
   function burst(cx, cy, n) {
     for (var i = 0; i < n; i++) {
@@ -61,6 +62,7 @@
   // ── GSAP 逐字弹跳标题 ─────────────────────────────
   (function () {
     var t = document.getElementById("pl-title");
+    if (!t) return;
     var txt = t.textContent;
     t.textContent = "";
     for (var i = 0; i < txt.length; i++) {
@@ -85,11 +87,12 @@
   // ── 消散 ─────────────────────────────────────────
   setTimeout(function () {
     var p = document.getElementById("kuri-preloader");
+    if (!p) return;
     gsap.to(p, {
       opacity: 0,
       duration: 1,
       ease: "expo.out",
-      onComplete: function () { p.remove(); }
+      onComplete: function () { var el = document.getElementById("kuri-preloader"); if (el) el.remove(); }
     });
   }, displayDuration * 1000);
 })();
