@@ -9,7 +9,7 @@ date: 2026-08-02 00:00:00
 
 如果你有 **SMAPI 报错**、Mod 冲突、游戏崩溃等问题，可以订购主播的**抖音会员业务包**，一对一远程帮你解决。
 
-🔗 抖音主页：[草莓麻薯冰淇淋](https://www.douyin.com/user/self)
+🔗 抖音主页：[草莓麻薯冰淇淋](https://www.douyin.com/user/MS4wLjABAAAAiG18r739_4WmBxoFrSZF4iNddozppXJiKTel28vRF5k)
 
 ## 📦 推荐资源
 
