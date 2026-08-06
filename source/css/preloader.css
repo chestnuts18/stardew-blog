@@ -35,17 +35,11 @@
   font-family: 'MiaoFont', sans-serif;
   font-size: clamp(2rem, 9vw, 4rem); color: #5b2c8a;
   text-shadow: 0 0 12px rgba(200,160,255,0.5), 0 0 30px rgba(180,130,255,0.3);
+  visibility: hidden;  /* 隐藏原始文字，等JS拆成.char后再显示 */
 }
 #kuri-preloader .center-text .char {
   display: inline-block;
-  animation: charBounce 0.9s cubic-bezier(0.18,0.89,0.32,1.28) forwards;
-}
-@keyframes charBounce {
-  0%   { opacity: 0; transform: translateY(-120px) scale(0) rotate(-45deg); }
-  50%  { opacity: 1; transform: translateY(15px) scale(1.4) rotate(10deg); }
-  70%  { transform: translateY(-8px) scale(0.85) rotate(-5deg); }
-  85%  { transform: translateY(4px) scale(1.06) rotate(2deg); }
-  100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+  visibility: visible;
 }
 
 @keyframes preloaderFadeOut {
