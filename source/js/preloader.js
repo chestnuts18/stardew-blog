@@ -51,7 +51,8 @@
     // ── GSAP matchMedia 响应式 ────────────────────────
     gsap.matchMedia().add({
       isMobile: "(max-width: 767px)",
-      reduceMotion: "(prefers-reduced-motion: reduce)"
+      reduceMotion: "(prefers-reduced-motion: reduce)",
+      always: "(min-width: 0px)"
     }, function (ctx) {
       var isMobile = ctx.conditions.isMobile;
       var reduce = ctx.conditions.reduceMotion;
