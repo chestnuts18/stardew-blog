@@ -227,7 +227,7 @@ plugins:
         theme: "#00473c"
         lrc: ""
   mermaid:
-    enable: true
+    enable: false
     version: "11.4.1"
     theme:
       light: "default"
