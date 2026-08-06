@@ -51,11 +51,11 @@ https://www.nexusmods.com/stardewvalley/mods/【尾号数字】
 ## 📦 一、Mod 合集链接 <img src="/images/emotes/kuri_通知_提示_星星_收藏_2026-08-02-03-51-25.gif" style="width:80px;display:inline;">
 <img src="/images/emotes/kuri_到达_2026-08-02-03-51-32.gif" style="width:80px;display:inline;">
 
-<div style="text-align:center;margin:20px 0;padding:18px 16px;background:linear-gradient(135deg,#fff8e1,#fff3cd);border:2px dashed #f0a500;border-radius:12px;">
+<div style="text-align:center;margin:20px 0;padding:18px 16px;background:linear-gradient(135deg,#faf5f1,#ede3d5);border:2px dashed #8B5E3C;border-radius:12px;">
 
 🔗 **主播所有 mod 合集看这里！**
 
-<a href="https://modlists.barleyzp.com/mod-lists/6a727003f1161f51ec27e184" target="_blank" style="display:block;font-size:1.2em;font-weight:bold;color:#d63384;word-break:break-all;margin:8px 0;text-decoration:underline;">
+<a href="https://modlists.barleyzp.com/mod-lists/6a727003f1161f51ec27e184" target="_blank" style="display:block;font-size:1.2em;font-weight:bold;color:#8B5E3C;word-break:break-all;margin:8px 0;text-decoration:underline;">
 https://modlists.barleyzp.com/mod-lists/6a727003f1161f51ec27e184
 </a>
 
