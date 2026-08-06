@@ -97,6 +97,15 @@
 .scroll-hint img {
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
 }
+@media (max-width: 768px) {
+  .scroll-hint {
+    bottom: 30px;
+    font-size: 13px;
+  }
+  .scroll-hint img {
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+  }
+}
 /* 鼠标滚轮图标 */
 .scroll-hint .mouse-icon {
   width: 26px; height: 42px;

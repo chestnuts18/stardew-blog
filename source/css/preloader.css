@@ -4,7 +4,7 @@
   src: url('/fonts/miao-subset.woff2') format('woff2'), url('/fonts/miao.ttf');
 }
 
-:root { --z-preloader: 99999; --z-overlay: 10; }
+:root { --z-preloader: 1000; --z-overlay: 10; }
 
 #kuri-preloader {
   position: fixed; z-index: var(--z-preloader); inset: 0;
@@ -18,6 +18,7 @@
   position: absolute;
   pointer-events: none;
   opacity: 0;
+  will-change: transform, opacity;
   animation: burstParticle 2.5s ease-out forwards;
 }
 @keyframes burstParticle {
@@ -40,10 +41,29 @@
 #kuri-preloader .center-text .char {
   display: inline-block;
   visibility: visible;
+  will-change: transform, opacity;
 }
 
 @keyframes preloaderFadeOut {
   to { opacity: 0; pointer-events: none; }
+}
+
+/* ── 移动端适配 ────────────────────────────── */
+@media (max-width: 768px) {
+  #kuri-preloader .emote-rain img {
+    animation-duration: 2s;  /* 手机快一点收尾 */
+  }
+  #kuri-preloader .center-text {
+    font-size: clamp(1.6rem, 11vw, 2.8rem);
+    text-shadow: 0 0 8px rgba(200,160,255,0.4), 0 0 20px rgba(180,130,255,0.25);
+  }
+}
+
+/* 小屏手机 */
+@media (max-width: 400px) {
+  #kuri-preloader .center-text {
+    font-size: clamp(1.4rem, 13vw, 2.2rem);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
