@@ -4,17 +4,14 @@
   src: url('/fonts/miao-subset.woff2') format('woff2'), url('/fonts/miao.ttf');
 }
 
-:root { --z-preloader: 1000; --z-overlay: 10; }
-
 #kuri-preloader {
-  position: fixed; z-index: var(--z-preloader); inset: 0;
-  background: #E8D7F9;
-  overflow: hidden;
+  /* 关键样式已内联在 HTML 中，此处为增强 */
 }
-#kuri-preloader .emote-rain {
+
+#emote-rain {
   position: absolute; width: 100%; height: 100%;
 }
-#kuri-preloader .emote-rain img {
+#emote-rain img {
   position: absolute;
   pointer-events: none;
   opacity: 0;
@@ -27,52 +24,43 @@
   100% { transform: translate(-50%,-50%) translate(var(--dx),var(--dy)) rotate(var(--rot)) scale(0.5); opacity: 0; }
 }
 
-#kuri-preloader .overlay {
-  position: fixed; inset: 0; z-index: var(--z-overlay);
-  display: flex; align-items: center; justify-content: center;
-  pointer-events: none;
-}
-#kuri-preloader .center-text {
+#pl-title {
   font-family: 'MiaoFont', sans-serif;
-  font-size: clamp(2rem, 9vw, 4rem); color: #5b2c8a;
+  font-size: clamp(2rem, 9vw, 4rem);
+  color: #5b2c8a;
   text-shadow: 0 0 12px rgba(200,160,255,0.5), 0 0 30px rgba(180,130,255,0.3);
-  visibility: hidden;  /* 隐藏原始文字，等JS拆成.char后再显示 */
+  visibility: hidden;
 }
-#kuri-preloader .center-text .char {
+#pl-title .char {
   display: inline-block;
   visibility: visible;
   will-change: transform, opacity;
 }
 
-@keyframes preloaderFadeOut {
-  to { opacity: 0; pointer-events: none; }
-}
-
 /* ── 移动端适配 ────────────────────────────── */
 @media (max-width: 768px) {
-  #kuri-preloader .emote-rain img {
-    animation-duration: 2s;  /* 手机快一点收尾 */
+  #emote-rain img {
+    animation-duration: 2s;
   }
-  #kuri-preloader .center-text {
+  #pl-title {
     font-size: clamp(1.6rem, 11vw, 2.8rem);
     text-shadow: 0 0 8px rgba(200,160,255,0.4), 0 0 20px rgba(180,130,255,0.25);
   }
 }
 
-/* 小屏手机 */
 @media (max-width: 400px) {
-  #kuri-preloader .center-text {
+  #pl-title {
     font-size: clamp(1.4rem, 13vw, 2.2rem);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  #kuri-preloader .emote-rain img,
-  #kuri-preloader .center-text .char {
+  #emote-rain img,
+  #pl-title .char {
     animation: none;
     opacity: 1;
   }
-  #kuri-preloader .center-text .char {
+  #pl-title .char {
     transform: translateY(0) scale(1) rotate(0deg);
   }
 }

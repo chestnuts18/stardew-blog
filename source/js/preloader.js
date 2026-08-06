@@ -69,7 +69,7 @@
       }
       t.style.visibility = "visible";
       if (typeof gsap !== "undefined") {
-        gsap.fromTo(".center-text .char", {
+        gsap.fromTo("#pl-title .char", {
           opacity: 0, y: titleY, scale: 0, rotation: -45
         }, {
           opacity: 1, y: 0, scale: 1, rotation: 0,
