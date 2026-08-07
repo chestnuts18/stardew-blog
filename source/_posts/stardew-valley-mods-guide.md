@@ -17,21 +17,21 @@ tags:
 categories:
   - 草莓麻薯冰淇淋
 description: 精选星露谷物语Mod推荐，包含NexusMods尾号，770+Mod精选清单。
-excerpt: 主播游玩1600+小时使用mod分享！韩网美化只占26个！感谢大家的灯牌支持！ <img src="/images/emotes/kuri_情书_2026-08-02-03-55-59.gif" style="width:60px;display:inline;">
+excerpt: 😼 主播1600+小时mod分享，韩网美化只占26个！700+ mod 精心搭配，谢谢大家对我审美的认可！ <img src="/images/emotes/kuri_情书_2026-08-02-03-55-59.gif" style="width:60px;display:inline;">
 cover: /images/封面图.png
 ---
 
-**本人用到的所有 模组 & 配置参数**
+<h3 style="margin-bottom:0.75rem">🌟 本人用到的所有模组、配置参数 & 美化分享都在这里，欢迎收藏！持续更新中～</h3>
 
-欢迎收藏这个网站！😺 星露谷 mod 使用方法、参数 & 美化分享都在这里，持续更新中～
-
-<div style="border-left:3px solid #00473c;padding:0.6rem 1rem;background:rgba(0,71,60,0.03);border-radius:0 8px 8px 0;font-size:0.92rem">
-😼 700+ mod 均为我花大量时间精心搭配，谢谢大家对我审美的认可和喜欢！光影参数可以参考，但布局和装修也是我费尽心思搭建出来的，请勿原封不动照搬用于直播 / 视频盈利。尊重一下别人花时间试出来的成果，谢谢理解。
+<div style="margin-bottom:0.5rem;padding:0.9rem 1.2rem;background:linear-gradient(135deg,rgba(196,120,107,0.08),rgba(196,120,107,0.03));border:1.5px solid rgba(196,120,107,0.25);border-radius:10px;font-size:0.94rem;line-height:1.9;text-align:center">
+💡 光影参数可以参考，但布局和装修也是我费尽心思搭建出来的<br>
+<strong style="color:#b84c3e;font-size:1.08em;">⚠️ 请勿原封不动照搬用于直播 / 视频盈利 ⚠️</strong><br>
+<span style="font-size:0.9em;color:#888;">尊重一下别人花时间试出来的成果，谢谢理解。</span>
 </div>
 
 
 
-## 📝 N网尾号使用说明
+### 📝 N网尾号使用说明
 
 NexusMods 上每个 mod 都有一个唯一的**数字尾号**：
 
