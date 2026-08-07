@@ -41,9 +41,8 @@ https://www.nexusmods.com/stardewvalley/mods/【尾号数字】
 
 把尾号替换进去就能直达 mod 下载页面！
 
-## 星露谷帧数优化
-星露谷优化可以看我的小红书帖子，推荐 32GB 内存以上的电脑再去使用：
-🔗 <https://www.xiaohongshu.com/explore/69b0a907000000001b017571>
+### ⚡ 星露谷帧数优化
+<small>推荐 32GB 内存以上的电脑再去使用，优化教程看这里：[📕 小红书帖子](https://www.xiaohongshu.com/explore/69b0a907000000001b017571)</small>
 ---
 
 ## 📦 一、Mod 合集链接 <img src="/images/emotes/kuri_通知_提示_星星_收藏_2026-08-02-03-51-25.gif" style="width:80px;display:inline;">
