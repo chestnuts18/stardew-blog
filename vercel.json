@@ -3,6 +3,13 @@
   "outputDirectory": "public",
   "framework": "hexo",
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/douyin",
+      "destination": "https://www.iesdouyin.com/share/user/MS4wLjABAAAAiG18r739_4WmBxoFrSZF4iNddozppXJiKTel28vRF5k?sec_uid=MS4wLjABAAAAiG18r739_4WmBxoFrSZF4iNddozppXJiKTel28vRF5k&from_ssr=1",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/images/cursor/(.*)",

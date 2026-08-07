@@ -21,7 +21,7 @@ date: 2026-08-02 00:00:00
 
 <i class="fa-brands fa-bilibili"></i> B站：[https://space.bilibili.com/65808599?spm_id_from=333.1007.0.0]
 
-<i class="fa-brands fa-tiktok"></i> 抖音：[https://www.douyin.com/user/621342618]
+<i class="fa-brands fa-tiktok"></i> 抖音：[https://kuriyu.love/douyin]
 
 <i class="fa-solid fa-book-open"></i> 小红书：[https://www.xiaohongshu.com/user/profile/61e81440000000001000da41]
 
