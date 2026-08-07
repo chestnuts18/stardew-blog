@@ -41,7 +41,7 @@ https://www.nexusmods.com/stardewvalley/mods/【尾号数字】
 
 把尾号替换进去就能直达 mod 下载页面！
 
-<small>⚡ 帧数优化：推荐 32GB 内存以上，[📕 小红书教程](https://www.xiaohongshu.com/discovery/item/69b0a907000000001b017571)</small>
+<small>⚡ 帧数优化：推荐 32GB 内存以上，[📕 小红书教程](https://www.xiaohongshu.com/discovery/item/69b0a907000000001b017571?xsec_token=AB0WJ0sIGQxSVXXjmBmAfyls447wpxCC-CHcuK0eTKlCc=&xsec_source=pc_share)</small>
 ---
 
 ## 📦 一、Mod 合集链接 <img src="/images/emotes/kuri_通知_提示_星星_收藏_2026-08-02-03-51-25.gif" style="width:80px;display:inline;">
@@ -278,7 +278,7 @@ ff mmap cp 家具会直接在左边里展示出来
 
 > ⚠️ **SDV-光辉和「高清眼镜」不能共存**，否则会出现黑屏之类的 bug。
 > 下面是我的设置，可以达到共存，性能参数不要照搬，根据你自己的设备来填。
-> 📖 参考帖子：<https://www.xiaohongshu.com/discovery/item/69b0a907000000001b017571>
+> 📖 参考帖子：<https://www.xiaohongshu.com/discovery/item/69b0a907000000001b017571?xsec_token=AB0WJ0sIGQxSVXXjmBmAfyls447wpxCC-CHcuK0eTKlCc=&xsec_source=pc_share>
 >
 > 如果打了 **21090** 这个 mod 出现平滑像素，请把 P1 这两个选项取消勾选。
 
