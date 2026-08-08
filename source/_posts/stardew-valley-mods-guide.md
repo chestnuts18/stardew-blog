@@ -154,7 +154,7 @@ https://modlists.barleyzp.com/mod-lists/6a727003f1161f51ec27e184
 
 ## 🔧 三、主播个人常用 Mod <img src="/images/emotes/kuri_工作%28普通%29_2026-08-04-23-16-28.gif" style="width:80px;display:inline;">
 
-我的着色是 **4705**！它真的非常美丽！包含了着色植被城镇建筑美化。但是已经 N网下架了，这里是论坛地址，进入需要梯子，下载一个你喜欢的版本用即可：
+我的着色是 **4705**！它真的非常美丽！包含了着色植被城镇建筑美化。但是已经 N网下架了，这里是论坛地址，下载一个你喜欢的版本用即可：
 🔗 <https://forums.stardewvalley.net/threads/foliage-redone-original-update-how-to-fix-recolours-for-the-new-update.28194/page-3>
 
 <img src="/images/4705.png" style="width:90%;">
