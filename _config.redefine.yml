@@ -191,7 +191,7 @@ articles:
   copyright:
     enable: true
     default: cc_by_nc_sa
-  lazyload: true
+  lazyload: false
   pangu_js: false
   recommendation:
     enable: false
@@ -208,6 +208,10 @@ footer:
   start: 2024/12/31 00:00:00
   statistics: false
   customize: '<div style="text-align:center;margin-bottom:6px">✨ 抖音星露谷美化主播 | 感谢陪伴 &nbsp;<img src="/images/kuri_celebrate.gif" style="width:22px;height:22px;vertical-align:middle;display:inline-block" alt="🎉"></div>'
+  icp:
+    enable: true
+    number: 新ICP备2026007172号-1
+    url: https://beian.miit.gov.cn
 
 # PLUGINS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 plugins:
