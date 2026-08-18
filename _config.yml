@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here.
-url: https://your-blog.vercel.app
+url: https://kuriyu.love
 permalink: :title/
 permalink_defaults:
 pretty_urls:
