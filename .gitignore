@@ -17,3 +17,9 @@ source/fonts/pixel-subset.*
 .agents/
 skills-lock.json
 _emote-library/
+
+# 本地部署产物/日志，勿提交
+ossutil_output/
+test-page.html
+shot1.png
+shot1_small.jpg
