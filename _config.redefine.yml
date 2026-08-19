@@ -28,15 +28,15 @@ global:
     chinese:
       enable: true
       family: "Noto Sans SC"
-      url: "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap"
+      url: "/css/fonts-local.css"
     english:
       enable: true
       family: "Noto Sans SC"
-      url: "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap"
+      url: "/css/fonts-local.css"
     title:
       enable: true
       family: "ZCOOL XiaoWei"
-      url: "https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap"
+      url: "/css/fonts-local.css"
   content_max_width: 1000px
   sidebar_width: 210px
   hover:
@@ -93,7 +93,7 @@ home_banner:
   custom_font:
     enable: true
     family: "ZCOOL XiaoWei"
-    url: "https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap"
+    url: "/css/fonts-local.css"
   social_links:
     enable: false
 
@@ -256,10 +256,10 @@ inject:
   head:
     - '<link rel="stylesheet" href="/css/preloader.css">'
     - '<script>if(!sessionStorage.getItem("pl")){var d=document.createElement("div");d.id="kuri-preloader";d.innerHTML="\x3cdiv id=\"emote-rain\">\x3c/div>\x3cdiv class=\"pl-center\">\x3cspan id=\"pl-title\">草莓麻薯冰淇淋\x3c/span>\x3c/div>";document.documentElement.appendChild(d)}</script>'
+    - '<script data-swup-ignore-script src="/js/preloader.js"></script>'
     - '<script>var _p=setInterval(function(){if(window.i18n&&window.i18n.runtime){window.i18n.runtime="🍓 草莓坚持营业";clearInterval(_p)}},10);function fixDom(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);var n;while(n=w.nextNode()){if(n.textContent.indexOf("博客已运行")!==-1)n.textContent=n.textContent.replace(/博客已运行/g,"🍓 草莓坚持营业");if(n.textContent.indexOf("访问人数")!==-1||n.textContent.indexOf("总访问量")!==-1)n.parentElement.style.display="none"}}document.addEventListener("DOMContentLoaded",fixDom);document.addEventListener("swup:willReplaceContent",function(){window.scrollTo(0,0)});document.addEventListener("swup:contentReplaced",function(){window.scrollTo(0,0);setTimeout(fixDom,100)})</script>'
   footer:
     - '<link rel="stylesheet" href="/css/custom.css">'
     - '<script>(function(){var c=window.theme&&window.theme.global&&window.theme.global.custom_cursor;if(!c||!c.enable)return;var s=document.createElement("style");s.textContent="*{cursor:url("+c.default+"),auto!important}a,button,[role=button],.nav-link,.links{cursor:url("+c.pointer+"),pointer!important}input,textarea,[contenteditable]{cursor:url("+c.text+"),text!important}";document.head.appendChild(s);document.addEventListener("swup:contentReplaced",function(){if(!document.head.contains(s))document.head.appendChild(s)})})()</script>'
-    - '<script data-swup-ignore-script src="/js/preloader.js"></script>'
     - '<script>if("scrollRestoration"in history){history.scrollRestoration="manual"}document.addEventListener("click",function(e){var a=e.target.closest("a[href]");if(a&&a.href.indexOf(location.origin)===0&&!a.hasAttribute("data-no-swup")){window.scrollTo(0,0)}},true);try{document.addEventListener("redefine:swup:ready",function(e){var p=e.detail.swup.plugins;if(p){for(var i=0;i<p.length;i++){if(p[i].name==="SwupScrollPlugin"){p[i].options.animateScroll=false;break}}}})}catch(e){console.warn(e)}</script>'
     - '<script>(function(){var b=document.querySelector(".home-banner-background");if(!b)return;var m=window.innerWidth<768;var h=document.createElement("div");h.className="scroll-hint";h.innerHTML="<img src=\"/images/preload/kuri_打招呼2_2026-08-05-02-16-41.gif\" style=\"width:"+(m?90:140)+"px;height:"+(m?90:140)+"px;display:block;margin:0 auto 10px\"><span style=\"font-size:"+(m?"0.85rem":"1.1rem")+";color:#fff;font-family:ZCOOL XiaoWei,serif;text-shadow:0 2px 8px rgba(0,0,0,0.4)\">"+(m?"下滑":"鼠标滚轮下滑")+"看我的尾号分享~</span>";h.onclick=function(){window.scrollTo({top:window.innerHeight,behavior:"smooth"})};b.appendChild(h);h.style.transition="opacity 0.3s ease-out";window.addEventListener("scroll",function(){h.style.opacity=window.scrollY>80?"0":"1"},{passive:true})})()</script>'

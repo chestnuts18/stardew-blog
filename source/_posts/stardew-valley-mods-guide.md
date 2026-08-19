@@ -1,4 +1,4 @@
----
+﻿---
 title: 星露谷Mod推荐 & N网尾号分享 | 参数配置+优化指南
 date: 2026-08-02 12:00:00
 updated: 2026-08-02 12:00:00
@@ -253,6 +253,33 @@ ff mmap cp 家具会直接在左边里展示出来
 
 ---
 
+### lnh的便捷路 [N网尾号: 17961] <img src="/images/emotes/kuri_工作%28普通%29_2026-08-04-23-16-28.gif" style="width:80px;display:inline;">
+
+- 🔗 <https://www.nexusmods.com/stardewvalley/mods/17961>
+- 刘哥的 mod 兼容自己的农场，用其他农场需要在设置里调整
+
+首先打开你要游玩的农场文件，找到 `content.json`：
+
+<img src="/images/lnh%E4%BE%BF%E6%8D%B7%E8%B7%AF1.png" style="width:90%;">
+
+右键选择用记事本打开，点击编辑：
+
+<img src="/images/lnh%E4%BE%BF%E6%8D%B7%E8%B7%AF2.png" style="width:90%;">
+
+点击查找：
+
+<img src="/images/lnh%E4%BE%BF%E6%8D%B7%E8%B7%AF3.png" style="width:90%;">
+
+在弹出的搜索框输入 `mapname`，下面会自动跳转到地图名称，连里面的空格也需要复制：
+
+<img src="/images/lnh%E4%BE%BF%E6%8D%B7%E8%B7%AF4.png" style="width:90%;">
+
+回到游戏界面用通用配置菜单打开 lnh便捷路，在自定义农场地图名称输入刚才 `""` 里复制的即可，上面的 XY 就是矿车的坐标，自己修改数值达到想要的位置：
+
+<img src="/images/lnh%E4%BE%BF%E6%8D%B7%E8%B7%AF6.png" style="width:90%;">
+
+
+
 ## ✨ 四、光影类 Mod
 
 ### SDV-光辉 [N网尾号: 49397] <img src="/images/emotes/kuri_反转_2026-08-02-03-57-56.gif" style="width:80px;display:inline;">
@@ -269,6 +296,7 @@ ff mmap cp 家具会直接在左边里展示出来
 <img src="/images/sdv8.png" style="width:90%;">
 <img src="/images/sdv9.png" style="width:90%;">
 <img src="/images/sdv10.png" style="width:90%;">
+<img src="/images/sdv11.png" style="width:90%;">
 
 ---
 
