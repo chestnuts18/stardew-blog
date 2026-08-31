@@ -286,17 +286,27 @@ ff mmap cp 家具会直接在左边里展示出来
 
 - 🔗 <https://www.nexusmods.com/stardewvalley/mods/49397>
 
-<img src="/images/sdv1.png" style="width:90%;">
-<img src="/images/sdv2.png" style="width:90%;">
-<img src="/images/sdv3.png" style="width:90%;">
-<img src="/images/sdv4.png" style="width:90%;">
-<img src="/images/sdv5.png" style="width:90%;">
-<img src="/images/sdv6.png" style="width:90%;">
-<img src="/images/sdv7.png" style="width:90%;">
-<img src="/images/sdv8.png" style="width:90%;">
-<img src="/images/sdv9.png" style="width:90%;">
-<img src="/images/sdv10.png" style="width:90%;">
-<img src="/images/sdv11.png" style="width:90%;">
+<img src="/images/sdv/1.png" style="width:90%;">
+<img src="/images/sdv/2.png" style="width:90%;">
+<img src="/images/sdv/3.png" style="width:90%;">
+<img src="/images/sdv/4.png" style="width:90%;">
+<img src="/images/sdv/5.png" style="width:90%;">
+<img src="/images/sdv/6.png" style="width:90%;">
+<img src="/images/sdv/7.png" style="width:90%;">
+<img src="/images/sdv/8.png" style="width:90%;">
+<img src="/images/sdv/9.png" style="width:90%;">
+<img src="/images/sdv/10.png" style="width:90%;">
+<img src="/images/sdv/11.png" style="width:90%;">
+<img src="/images/sdv/12.png" style="width:90%;">
+<img src="/images/sdv/13.png" style="width:90%;">
+<img src="/images/sdv/14.png" style="width:90%;">
+<img src="/images/sdv/15.png" style="width:90%;">
+<img src="/images/sdv/16.png" style="width:90%;">
+<img src="/images/sdv/17.png" style="width:90%;">
+<img src="/images/sdv/18.png" style="width:90%;">
+<img src="/images/sdv/19.png" style="width:90%;">
+<img src="/images/sdv/20.png" style="width:90%;">
+<img src="/images/sdv/21.png" style="width:90%;">
 
 ---
 
@@ -306,7 +316,6 @@ ff mmap cp 家具会直接在左边里展示出来
 
 > ⚠️ **SDV-光辉和「高清眼镜」不能共存**，否则会出现黑屏之类的 bug。
 > 下面是我的设置，可以达到共存，性能参数不要照搬，根据你自己的设备来填。
-> 📖 参考帖子：<https://www.xiaohongshu.com/discovery/item/69b0a907000000001b017571?xsec_token=AB0WJ0sIGQxSVXXjmBmAfyls447wpxCC-CHcuK0eTKlCc=&xsec_source=pc_share>
 >
 > 如果打了 **21090** 这个 mod 出现平滑像素，请把 P1 这两个选项取消勾选。
 

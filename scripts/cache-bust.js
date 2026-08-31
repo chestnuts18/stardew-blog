@@ -5,7 +5,7 @@
  * 浏览器视为新资源强制重新下载（CDN 缓存 key 含参数，也走全新回源）。
  * 修改 main.js/preloader.js 后记得把版本号 +1。
  */
-const VER = "2";
+const VER = "3";
 
 hexo.extend.filter.register("after_render:html", function (html, data) {
   if (!data.path || !data.path.endsWith(".html")) return html;
