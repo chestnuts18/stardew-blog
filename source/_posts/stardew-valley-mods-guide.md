@@ -51,8 +51,8 @@ https://www.nexusmods.com/stardewvalley/mods/【尾号数字】
 
 🔗 **主播所有 mod 合集看这里！**
 
-<a href="https://modlists.barleyzp.com/mod-lists/6a727003f1161f51ec27e184" target="_blank" style="display:block;font-size:1.2em;font-weight:bold;color:#8B5E3C;word-break:break-all;margin:8px 0;text-decoration:underline;">
-https://modlists.barleyzp.com/mod-lists/6a727003f1161f51ec27e184
+<a href="https://modlists.barleyzp.com/mod-lists/6ab73635fa2992a5ef7f5319" target="_blank" style="display:block;font-size:1.2em;font-weight:bold;color:#8B5E3C;word-break:break-all;margin:8px 0;text-decoration:underline;">
+https://modlists.barleyzp.com/mod-lists/6ab73635fa2992a5ef7f5319
 </a>
 
 </div>
