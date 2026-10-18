@@ -203,7 +203,7 @@ https://modlists.barleyzp.com/mod-lists/6ab73635fa2992a5ef7f5319
 
 ### 虫肉美化 <img src="/images/emotes/kuri_吃爆米花_2026-08-02-03-54-05.gif" style="width:80px;display:inline;">
 
-- 🔗 <https://www.nexusmods.com/stardewvalley/mods/4180>
+- 🔗 <https://www.nexusmods.com/stardewvalley/mods/14180>
 
 ### 塞巴斯蒂安的青蛙箱子美化 <img src="/images/emotes/kuri_一切都好_2_2026-08-02-03-59-56.gif" style="width:80px;display:inline;">
 
@@ -285,6 +285,30 @@ ff mmap cp 家具会直接在左边里展示出来
 ### SDV-光辉 [N网尾号: 49397] <img src="/images/emotes/kuri_反转_2026-08-02-03-57-56.gif" style="width:80px;display:inline;">
 
 - 🔗 <https://www.nexusmods.com/stardewvalley/mods/49397>
+
+这次更新了可以一键粘贴的代码！大家可以选择直接复制粘贴导入，无需再一个一个选项按照图片调整！
+
+点一下「粘贴代码」按钮：
+
+<img src="/images/粘贴代码1.png" style="width:90%;">
+
+在弹出的输入框里按 <kbd>Ctrl</kbd> + <kbd>V</kbd> 粘贴下面的代码，再点 <kbd>OK</kbd> 即可：
+
+<img src="/images/粘贴代码2.png" style="width:90%;">
+
+**① 我的外观代码**（只换外观，性能参数用默认的就行）：
+
+```
+RAD1L-JG102-S022R-1H810-10WY0-GTG9D-G5003-07240-14PGK-04C1J-68038-F1P00-W50EG-Y7HB3-X2E80-84MTD-M8F5B-065G3-30143-PG216-CSK63-S3G13-T7G2K-4M04S-9G088-K40JN-6G18P-DG3F4-X04DS-W080K-W0G50-82122-04145-09J8C-0J7GW-10120-2CJ50-4E4B0-8XRR0-G5HM1-193G2-DEF05-ZWZ08-7R00S-QG41H-90G31-Y1G6S-440C2-RG0R0-H41G3-2G30P-60634-D0CF8-W0S4J-01T54-834ES-07BGD-G0203-0841E-1085C-30GNR-G101H-825Q7-84S2A-GBDCP-0PA9E-1AYGR-36920-6M260-D3CD0-SNS61-KCJG3-91586-S2BGD-6DR0R-7037R-6CA00-E7450-WZ8C1-SPGW3-K9287-6A50E-0CB0W-0S41S-VJC3S-35072-ADGFZ-WX0W3-9J21P-K84HN-X8
+```
+
+**② 我的外观代码 + 硬件参数**：
+
+> ⚠️ 谨慎使用，可能造成严重的卡顿！大家根据自己的设备调节性能参数。
+
+```
+RAD1F-K8102-S022R-1H810-10WY0-GTG9D-G5003-07240-14PGK-04C1J-68038-F1P00-W50EG-Y7HB3-X2E80-84MTD-M8F5B-065G3-30143-PG216-CSK63-S3G13-T7G2K-4M04S-9G088-K40JN-6G18P-DG3F4-X04DS-W080K-W0G50-82122-04145-09J8C-0J7GW-10120-2CJ50-4E4B0-8XRR0-G5HM1-193G2-DEF05-ZWZ08-7R00S-QG41H-90G31-Y1G6S-440C2-RG0R0-H41G3-2G30P-60634-D0CF8-W0S4J-01T54-834ES-07BGD-G0203-0841E-1085C-30GNR-G101H-825Q7-84S2A-GBDCP-0PA9E-1AYGR-36920-6M260-D3CD0-SNS61-KCJG3-91586-S2BGD-6DR0R-7037R-6CA00-E7450-WZ8C1-SPGW3-K9287-6A50E-0CB0W-0S41S-VJC3S-35072-ADGFZ-WX0W3-9J21P-KC401-708S2-D0J6K-0
+```
 
 <img src="/images/sdv/1.png" style="width:90%;">
 <img src="/images/sdv/2.png" style="width:90%;">
