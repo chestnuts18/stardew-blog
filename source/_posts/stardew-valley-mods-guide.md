@@ -311,26 +311,10 @@ RAD1F-K8102-S022R-1H810-10WY0-GTG9D-G5003-07240-14PGK-04C1J-68038-F1P00-W50EG-Y7
 ```
 
 <img src="/images/sdv/1.png" style="width:90%;">
+
+> 如果出现画面模糊请调节特效渲染分辨率，可能会出现掉帧卡顿！一定要谨慎考虑！
+
 <img src="/images/sdv/2.png" style="width:90%;">
-<img src="/images/sdv/3.png" style="width:90%;">
-<img src="/images/sdv/4.png" style="width:90%;">
-<img src="/images/sdv/5.png" style="width:90%;">
-<img src="/images/sdv/6.png" style="width:90%;">
-<img src="/images/sdv/7.png" style="width:90%;">
-<img src="/images/sdv/8.png" style="width:90%;">
-<img src="/images/sdv/9.png" style="width:90%;">
-<img src="/images/sdv/10.png" style="width:90%;">
-<img src="/images/sdv/11.png" style="width:90%;">
-<img src="/images/sdv/12.png" style="width:90%;">
-<img src="/images/sdv/13.png" style="width:90%;">
-<img src="/images/sdv/14.png" style="width:90%;">
-<img src="/images/sdv/15.png" style="width:90%;">
-<img src="/images/sdv/16.png" style="width:90%;">
-<img src="/images/sdv/17.png" style="width:90%;">
-<img src="/images/sdv/18.png" style="width:90%;">
-<img src="/images/sdv/19.png" style="width:90%;">
-<img src="/images/sdv/20.png" style="width:90%;">
-<img src="/images/sdv/21.png" style="width:90%;">
 
 ---
 
