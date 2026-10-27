@@ -278,7 +278,15 @@ ff mmap cp 家具会直接在左边里展示出来
 
 <img src="/images/lnh%E4%BE%BF%E6%8D%B7%E8%B7%AF6.png" style="width:90%;">
 
+---
 
+### 轻松收获（EasyHarvest）[N网尾号: 20924] <img src="/images/emotes/kuri_吃(西瓜)_2026-08-04-23-15-18.gif" style="width:80px;display:inline;">
+
+- 🔗 <https://www.nexusmods.com/stardewvalley/mods/20924>
+- 全图一键采集 mod！镰刀或者剑挥一下，就能把整张地图上可采集的东西一次性全部收获
+- ⚠️ **镰刀一键收获范围必须设置成 `-1`**，否则只能收到身边一小圈，不是全图
+
+<img src="/images/轻松收获.png" style="width:90%;">
 
 ## ✨ 四、光影类 Mod
 
